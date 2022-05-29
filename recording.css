@@ -1,0 +1,130 @@
+
+
+:root {
+    --background: #f4e5f2;
+    --text: #8d7e7e; 
+    --foreground: white;
+    --font: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background:#f4ede5 ;
+    display: flex;
+    color:  #8d7e7e;
+    height: 100%;
+    margin: 0;
+    padding: 8px;
+}
+
+body, input, button, textarea {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+main {
+    max-width: 960px;
+    width: 60%;
+    background: var(--foreground);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 7px rgba(0,0,0,0.08);
+    margin: auto;
+    
+}
+
+main  section{
+    width: 60%;
+    padding-bottom: 20px;
+    text-align: center;
+    
+}
+
+main .error {
+    padding: 4px 10px;
+    background: #ffe2e2;
+    border-radius: 7px;
+    color: #fa1c2c;
+    margin: 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+
+label {
+    font-size: 14px;
+}
+
+form {
+    max-width: 387px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+input[type=text], input[type=password], #upload {
+    background: var(--background);
+    padding: 4px;
+    border: 2px solid var(--background);
+    color: var(--text);
+    border-radius: 4px;
+    transition: border ease 0.3s;
+}
+
+input[type=submit] {
+    background: #2e1061;
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    color: var(--foreground);
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+}
+
+input[type=submit]:hover {
+    background: #fa1c2c;
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+    border: 2px solid var(--hl_text);
+    outline-width: 0;
+}
+
+main input {
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+main form > div {
+    margin: 5px 10px
+}
+
+
+form span {
+    opacity: 0;
+    font-size: 11px;
+    transition: opacity 0.3s ease;
+}
+
+
+.errorj label {
+    color: #fa1c2c;
+}
+
+.errorj span {
+    opacity: 1;
+    font-size: 11px;
+    color: #fa1c2c;
+}
+
+.errorj input {
+    border-color: #fa1c2c;
+}
+
+
+main .signup a:hover {
+    color: #fa1c2c;
+}
